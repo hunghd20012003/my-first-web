@@ -2,4 +2,52 @@
     background-color:rgb(207, 235, 199)  ;
     width: 100%;
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(7,1fr);
 }
+.nen{
+    grid-area: 1/1/8/9;
+    display: block;
+    position: relative;
+}
+.img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Giữ tỷ lệ và cắt đi phần thừa */
+}
+.khunglong1{
+    grid-area: 4/1/8/3;
+    display: block;
+    position: relative;
+}
+.khunglong2{
+    grid-area: 4/7/7/9;
+    display: block;
+    position: relative; 
+}
+.chu{
+    grid-area: 2/2/7/8;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#container1{
+    display: flex;
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+}
+.centered-element {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
